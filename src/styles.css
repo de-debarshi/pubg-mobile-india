@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+    margin: 0;
+}
+.page-header {
+  background-color: #b2afab;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 999px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.page-header.section-dark .category-absolute, .page-header.section-dark .content-center {
+  z-index: 1;
+}
+
+.title-brand {
+  max-width: 730px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+
+.presentation-title {
+  font-size: 5em;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  background: linear-gradient(to bottom,#FF9933 35%, #138808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.presentation-subtitle {
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.moving-clouds {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 250.625em;
+  height: 43.75em;
+  -webkit-animation: 80s linear infinite cloudLoop;
+  animation: 80s linear infinite cloudLoop;
+}
+
+@-webkit-keyframes cloudLoop{
+  0% {
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+  }
+  100% {-webkit-transform:translate3d(-50%,0,0);
+    transform:translate3d(-50%,0,0);
+  }}
+  @keyframes cloudLoop{
+    0% {
+      -webkit-transform:translate3d(0,0,0);
+      transform:translate3d(0,0,0);
+    }
+    100%{-webkit-transform:translate3d(-50%,0,0);
+      transform:translate3d(-50%,0,0)};
+    }
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
